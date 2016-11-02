@@ -1,9 +1,8 @@
 //
-//  cardView.m
-//  卡片动画
+//  cardView.h
 //
-//  Created by Neo on 15/6/27.
-//  Copyright (c) 2015年 KuBao. All rights reserved.
+//  Created by Neo on 16/10/27.
+//  Copyright (c) 2016年  All rights reserved.
 //
 
 #import "cardView.h"
