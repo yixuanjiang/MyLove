@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  MyLove
+//  卡片动画
 //
-//  Created by 265g on 16/11/2.
-//  Copyright © 2016年 Company. All rights reserved.
+//  Created by Neo on 15/6/23.
+//  Copyright (c) 2015年 KuBao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
