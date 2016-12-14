@@ -1,0 +1,32 @@
+//
+//  MyLove.pch
+//  MyLove
+//
+//  Created by 265g on 16/11/3.
+//  Copyright © 2016年 Company. All rights reserved.
+//
+
+#ifndef MyLove_pch
+#define MyLove_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/**
+ *屏幕尺寸相关
+ */
+#define SCREEN_WIGHT  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+
+//百度街景
+#import "BaiduPanoSDK/BaiduPanoramaView.h"
+#import "Masonry.h"
+
+#endif /* MyLove_pch */

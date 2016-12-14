@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+
+@interface AppDelegate ()<BMKGeneralDelegate>
+
+@property (nonatomic, strong)BMKMapManager* mapManager;
 
 @end
 
@@ -17,7 +20,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //BMKMapManager的初始化
+    [self setUpBMKMapManager];
+    
     return YES;
+}
+
+- (void)setUpBMKMapManager
+{
+    // 要使用百度地图，请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:@"dE9hEYcOnOYp3yIbiuhAnKqxgn4KniMK" generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+}
+
+- (void)onGetNetworkState:(int)iError
+{
+    if (0 == iError) {
+        NSLog(@"联网成功");
+    }
+    else{
+        NSLog(@"onGetNetworkState %d",iError);
+    }
+    
+}
+
+- (void)onGetPermissionState:(int)iError
+{
+    if (0 == iError) {
+        NSLog(@"授权成功");
+    }
+    else {
+        NSLog(@"onGetPermissionState %d",iError);
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

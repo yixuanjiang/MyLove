@@ -14,16 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - BaiduMapKit (2.10.0)
   - pop (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BaiduMapKit
   - pop (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  BaiduMapKit: 5df028c6b455d29e68e89694adbcf9d37a4bcc99
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: 8bf5dbdb1f17f8f593676552625ac62bf47c592c
+PODFILE CHECKSUM: 324c20ef981b4c0437b944acb408ab9992744e7a
 
 COCOAPODS: 1.0.1

@@ -6,6 +6,7 @@
 //
 
 #import "cardView.h"
+#import "YXBaiDuMapVC.h"
 
 #import <POP.h>
 @interface cardView()
@@ -42,6 +43,13 @@
 
     NSLog(@"%zd",self.tag);
 
+    UINavigationController *navi = [UIApplication sharedApplication].keyWindow.rootViewController.childViewControllers[0];
+    
+    if (self.tag == 0) {
+        
+        YXBaiDuMapVC *baiduMapVC = [[YXBaiDuMapVC alloc] init];
+        [navi pushViewController:baiduMapVC animated:YES];
+    }
 }
 
 @end
